@@ -1,0 +1,32 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espacio entre las filas de la pirámide */
+}
+
+.fila {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los contenedores dentro de cada fila */
+}
+
+.capa {
+    background-color: blanchedalmond;
+    padding: 15px;
+    border: 2px solid #ccc; /* Borde para separar visualmente */
+    width: 100px; /* Ancho fijo para que las capas se vean uniformes */
+    text-align: center; /* Centra el texto dentro de las capas */
+}
+
+.capa.uno {
+    background-color: yellow;
+}
+@media(max-width: 800px){
+    .contenedor{
+        flex-direction: column;
+    }
+    .contenedor .capa{
+        width: 100%;
+    }
+}
